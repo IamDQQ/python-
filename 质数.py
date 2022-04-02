@@ -1,0 +1,17 @@
+for num in range(1,10):  # 迭代 10 到 20 之间的数字
+   for i in range(2,num): # 根据因子迭代
+      if num%i == 0:      # 确定第一个因子
+         j=num/i          # 计算第二个因子
+         print ('%d 等于 %d * %d' % (num,i,j))
+         break            # 跳出当前循环
+   else:                  # 循环的 else 部分
+      print ('%d 是一个质数' % num)
+#IDLE 可以用定义
+def su(a,b):
+   for num in range(a,b):
+      for i in range(2,num):
+         if num%i==0:
+            break
+      else:
+         print('%d' %num)
+
